@@ -1,0 +1,29 @@
+{
+  "name": "qijunyuan.com",
+  "version": "0.0.1",
+  "description": "Qi Junyuan's Personal Site.",
+  "main": "index.html",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conan007ai/conan007ai.github.io.git"
+  },
+  "keywords": [
+    "qijunyuan.com"
+  ],
+  "author": "QI Junyuan <i@qijunyuan.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/conan007ai/conan007ai.github.io/issues"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-coffee": "~0.9.0",
+    "grunt-contrib-less": "~0.9.0"
+  },
+  "dependencies": {
+    "grunt-bump": "0.0.13"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "qijunyuan.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/conan007ai/conan007ai.github.io",
+  "authors": [
+    "Qi Junyuan <conan007ai@gmail.com>"
+  ],
+  "description": "Qi Junyuan's Personal Site.",
+  "main": "index.html",
+  "keywords": [
+    "qijunyuan.com"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.0"
+  }
+}
