@@ -216,15 +216,21 @@ th {
   height: 150px;
   line-height: 150px;
   border-radius: 150px;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
 }
 .bubble.design {
   top: -30px;
   background-color: #6FEC77;
+  -webkit-animation-delay: -200ms;
+  animation-delay: -200ms;
 }
 .bubble.develop {
   left: -3px;
   top: 40px;
   background-color: #75B1FD;
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
 }
 .bubble.read {
   top: -10px;
@@ -233,9 +239,33 @@ th {
 .bubble.life {
   top: -60px;
   background-color: #FF7BFA;
+  -webkit-animation-delay: -200ms;
+  animation-delay: -200ms;
 }
 .bubble.work {
   left: 7px;
   top: 20px;
   background-color: #FF7171;
+  -webkit-animation-delay: -500ms;
+  animation-delay: -500ms;
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
 }
