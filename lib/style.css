@@ -186,6 +186,7 @@ th {
   transform: translate(0, -50%);
 }
 .avatar {
+  display: block;
   margin: 0 auto;
   width: 170px;
   height: 170px;
@@ -193,15 +194,9 @@ th {
   background-size: 170px 170px;
   border-radius: 170px;
 }
-.words {
-  display: block;
-  margin: 0 auto;
-  width: 500px;
-  text-align: center;
-}
 .bubbles {
   padding: 0;
-  margin: 70px auto;
+  margin: 70px auto 30px;
   width: 960px;
   height: 200px;
 }
@@ -274,4 +269,47 @@ th {
     transform: scale(1);
     -webkit-transform: scale(1);
   }
+}
+.scripts {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  width: 800px;
+  height: 50px;
+  font-size: 21px;
+}
+.script {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(0, 20px);
+  -ms-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+  -webkit-transition: opacity 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+.script.on {
+  z-index: 1;
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.script a {
+  display: inline-block;
+  text-decoration: none;
+  color: #75B1FD;
+}
+.script a:hover {
+  text-decoration: underline;
+}
+.script a:active {
+  -webkit-transform: translate(0, 1px);
+  -ms-transform: translate(0, 1px);
+  transform: translate(0, 1px);
 }
