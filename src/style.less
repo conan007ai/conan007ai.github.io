@@ -18,9 +18,16 @@
   border-radius: 170px;
 }
 
+.words {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
 .bubbles {
   padding: 0;
-  margin: 70px auto 0;
+  margin: 70px auto;
   width: 960px;
   height: 200px;
 }
@@ -44,27 +51,27 @@
   line-height: 150px;
   border-radius: 150px;
 
-  -webkit-animation: bounce 2.0s infinite ease-in-out;
-  animation: bounce 2.0s infinite ease-in-out;
+  -webkit-animation: bounce 2048ms infinite ease-in-out;
+  animation: bounce 2048ms infinite ease-in-out;
 
-  &.design {
+  &.read {
     top: -30px;
-    background-color: #6FEC77;
+    background-color: #FFC763;
     -webkit-animation-delay: -200ms;
     animation-delay: -200ms;
   }
 
-  &.develop {
+  &.design {
     left: -3px;
     top: 40px;
-    background-color: #75B1FD;
+    background-color: #6FEC77;
     -webkit-animation-delay: 200ms;
     animation-delay: 200ms;
   }
 
-  &.read {
+  &.develop {
     top: -10px;
-    background-color: #FFC763;
+    background-color: #75B1FD;
   }
 
   &.life {

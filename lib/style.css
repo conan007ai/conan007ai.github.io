@@ -193,9 +193,15 @@ th {
   background-size: 170px 170px;
   border-radius: 170px;
 }
+.words {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
 .bubbles {
   padding: 0;
-  margin: 70px auto 0;
+  margin: 70px auto;
   width: 960px;
   height: 200px;
 }
@@ -216,25 +222,25 @@ th {
   height: 150px;
   line-height: 150px;
   border-radius: 150px;
-  -webkit-animation: bounce 2s infinite ease-in-out;
-  animation: bounce 2s infinite ease-in-out;
+  -webkit-animation: bounce 2048ms infinite ease-in-out;
+  animation: bounce 2048ms infinite ease-in-out;
 }
-.bubble.design {
+.bubble.read {
   top: -30px;
-  background-color: #6FEC77;
+  background-color: #FFC763;
   -webkit-animation-delay: -200ms;
   animation-delay: -200ms;
 }
-.bubble.develop {
+.bubble.design {
   left: -3px;
   top: 40px;
-  background-color: #75B1FD;
+  background-color: #6FEC77;
   -webkit-animation-delay: 200ms;
   animation-delay: 200ms;
 }
-.bubble.read {
+.bubble.develop {
   top: -10px;
-  background-color: #FFC763;
+  background-color: #75B1FD;
 }
 .bubble.life {
   top: -60px;

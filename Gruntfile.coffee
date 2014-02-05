@@ -32,6 +32,7 @@ module.exports = (grunt) ->
         createTag: true
         tagName: 'v%VERSION%'
         tagMessage: 'Version %VERSION%'
+        push: false
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-less'
